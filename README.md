@@ -3,147 +3,120 @@
 A responsive stockbroker landing-page clone built with React.js and CSS as a frontend learning project.
 
 > **Project brief:** SapphireIQ Student Project Guide  
-> **Scope:** Frontend UI only. This repository is initialized with the project README; application implementation is not included yet.
+> **Current stage:** Module 1 — Project Setup & Layout Foundations
 
 ## Overview
 
-The goal is to recreate the clean, responsive structure of the Zerodha website's landing page. The project focuses on component-based UI, reusable content sections, responsive layouts, navigation, and deployment.
-
-### Project goals
-
-- Build a responsive landing page using React.js and CSS.
-- Organize the interface into reusable components.
-- Recreate the navigation, hero, feature/content sections, and footer.
-- Test the layout across mobile, tablet, and desktop screen sizes.
-- Deploy the finished frontend.
+The goal is to recreate the landing-page structure of the Zerodha website using React, reusable components, and responsive CSS. This is an educational frontend project only.
 
 ## Technology
 
-| Technology / Tool | Purpose |
-| --- | --- |
-| React.js | Component-based UI |
-| Vite or Create React App | Project setup and development tooling |
-| CSS | Styling, Flexbox, Grid, media queries |
-| Vercel or Netlify | Deployment |
+- **React 19** — component-based UI
+- **Vite 6** — development server and production build tooling
+- **CSS** — reset, base styles, and page styling
 
-## Planned application structure
+## Getting started
 
-The exact folder structure will be finalized during Module 1. The component hierarchy should include:
+### Prerequisites
 
-- **Navbar** — logo, navigation links, sticky behavior.
-- **Hero** — heading, supporting text, and call-to-action buttons.
-- **Feature and content sections** — reusable sections, cards, and statistics.
-- **Footer** — navigation links and legal information.
+- Node.js 20.19+ or 22.12+
+- npm
 
-## Roadmap
+### Install dependencies
 
-The project is divided into the four modules defined in the SapphireIQ project brief.
+```bash
+npm install
+```
+
+### Start the development server
+
+```bash
+npm run dev
+```
+
+Open the local URL printed by Vite in your terminal (usually `http://localhost:5173`).
+
+### Create a production build
+
+```bash
+npm run build
+```
+
+### Preview the production build
+
+```bash
+npm run preview
+```
+
+## Project structure
+
+```text
+zerodha-clone-sapphire-iq/
+├── index.html
+├── package.json
+├── .gitignore
+└── src/
+    ├── main.jsx
+    ├── App.jsx
+    ├── index.css
+    └── components/
+        ├── Navbar.jsx
+        ├── Hero.jsx
+        ├── Sections.jsx
+        └── Footer.jsx
+```
+
+## Module roadmap
 
 ### Module 1 — Project Setup & Layout Foundations
 
-**Learning objectives**
+**PRD objectives**
 - Initialize the React project and folder structure.
 - Set up a CSS reset/base stylesheet for consistent rendering.
 - Break the page into a component hierarchy: Navbar, Hero, Sections, Footer.
 
-**Core concepts**
-- Component-based layout: map a visual design to a component tree before styling.
-- CSS reset: neutralize browser default styles for a consistent baseline.
+**Implemented**
+- Vite + React project scaffold and npm scripts.
+- HTML entry point and React mounting file.
+- CSS reset and base stylesheet.
+- Root `App` component composing Navbar, Hero, Sections, and Footer.
+- Placeholder components for each page region.
+- `.gitignore` for dependencies, build output, and environment files.
 
-**Tools and technologies**
-- Vite / Create React App
-- CSS reset
-- Component folder structure
-
-**Hands-on checkpoint:** The project scaffold renders with empty placeholder sections matching the target page structure.
+**Checkpoint:** Run `npm install` and `npm run dev`; confirm that the page loads and displays all four placeholder regions. The placeholders intentionally contain no Module 2–4 design implementation.
 
 ### Module 2 — Hero Section & Navigation
 
-**Learning objectives**
 - Build a responsive navigation bar with logo and links.
 - Build the hero section with heading, subtext, and call-to-action buttons.
 - Make the navigation sticky on scroll.
 
-**Core concepts**
-- Above-the-fold design: prioritize the content visible without scrolling.
-- Sticky positioning: keep navigation accessible while scrolling.
-
-**Tools and technologies**
-- CSS Flexbox
-- `position: sticky`
-- Button components
-
-**Hands-on checkpoint:** The navigation bar and hero section match the live reference site's layout and content.
-
 ### Module 3 — Feature & Content Sections
 
-**Learning objectives**
-- Build reusable section components for features and stats.
-- Populate them with realistic stockbroker-site content.
-- Arrange content in a responsive grid.
-
-**Core concepts**
-- Reusable section components: one component renders many similar content blocks.
-- Grid-based content layout: arrange feature cards or stats in rows and columns.
-
-**Tools and technologies**
-- CSS Grid
-- Reusable card components
-
-**Hands-on checkpoint:** Feature and stats sections render from a data array, not hardcoded per-item markup.
+- Build reusable feature and statistics components.
+- Populate sections with realistic stockbroker-site content.
+- Arrange content in a responsive grid and render repeated items from data.
 
 ### Module 4 — Footer, Polish & Deployment
 
-**Learning objectives**
 - Build a responsive footer with links and legal text.
-- Test and fix layout issues across mobile, tablet, and desktop widths.
+- Test mobile, tablet, and desktop layouts.
 - Deploy the finished site.
 
-**Core concepts**
-- Responsive breakpoints: adjust layout at defined screen-width thresholds.
-- Cross-device testing: catch layout issues before deployment.
+## Learning outcomes
 
-**Tools and technologies**
-- CSS media queries
-- Vercel / Netlify
-
-**Hands-on checkpoint:** The full page is deployed and looks correct on mobile, tablet, and desktop.
-
-## Prerequisites
-
-- **React fundamentals:** JSX, functional components, props, and component composition.
-- **CSS fundamentals:** Flexbox, Grid, responsive layouts, and media queries.
-- **Tooling:** Vite / Create React App and basic deployment knowledge.
-
-## Getting started
-
-This repository currently contains the project brief only. Application source code and package configuration have not been added yet.
-
-After Module 1 is implemented, installation and local development commands will be documented here.
-
-## Expected outcome
-
-A fully responsive, deployed landing page combining:
-
-| Component | Responsibility |
-| --- | --- |
-| Navbar | Sticky navigation |
-| Hero + Sections | Hero content and reusable content components |
-| Footer | Links and legal information |
-
-## Skills practiced
-
-- Component-based layout planning from a visual design.
-- Building responsive navigation and hero sections.
-- Data-driven, reusable content section components.
-- Cross-device responsive testing and deployment.
-
-Use the module exercises as checkpoints while building the application.
+- Plan a component tree from a visual design.
+- Build reusable React components.
+- Establish a consistent CSS baseline.
+- Develop and build a React application with Vite.
 
 ## Project status
 
-**Current status:** Planning / README initialized.  
-**Implementation status:** Not started.
+- [x] Module 1 scaffold and component placeholders added.
+- [ ] Module 1 local run/build verification.
+- [ ] Module 2 — Hero Section & Navigation.
+- [ ] Module 3 — Feature & Content Sections.
+- [ ] Module 4 — Footer, Polish & Deployment.
 
 ## Disclaimer
 
