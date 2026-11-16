@@ -3,7 +3,7 @@
 A responsive stockbroker landing-page clone built with React.js and CSS as a frontend learning project.
 
 > **Project brief:** SapphireIQ Student Project Guide  
-> **Current stage:** Module 1 — Project Setup & Layout Foundations
+> **Current stage:** Module 2 — Hero Section & Navigation
 
 ## Overview
 
@@ -87,9 +87,19 @@ zerodha-clone-sapphire-iq/
 
 ### Module 2 — Hero Section & Navigation
 
+**PRD objectives**
 - Build a responsive navigation bar with logo and links.
 - Build the hero section with heading, subtext, and call-to-action buttons.
 - Make the navigation sticky on scroll.
+
+**Implemented**
+- Sticky header with Zerodha-style wordmark, navigation links, and sign-in/sign-up actions.
+- Responsive mobile navigation with an accessible toggle and close-on-link behavior.
+- Hero copy using the current official homepage headline and supporting description.
+- Primary sign-up call to action.
+- Responsive CSS layout and a custom dashboard/chart illustration built with HTML and SVG.
+
+**Checkpoint:** Verify the navigation remains visible while scrolling, the mobile menu opens/closes, and the hero adapts to desktop and mobile widths.
 
 ### Module 3 — Feature & Content Sections
 
@@ -114,7 +124,8 @@ zerodha-clone-sapphire-iq/
 
 - [x] Module 1 scaffold and component placeholders added.
 - [ ] Module 1 local run/build verification.
-- [ ] Module 2 — Hero Section & Navigation.
+- [x] Module 2 implementation committed to GitHub.
+- [ ] Module 2 local responsive and sticky-navigation verification.
 - [ ] Module 3 — Feature & Content Sections.
 - [ ] Module 4 — Footer, Polish & Deployment.
 
